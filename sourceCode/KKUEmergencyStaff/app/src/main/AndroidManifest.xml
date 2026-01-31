@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".SosStaffApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SOSStaff"
+        tools:targetApi="31">
+
+        <!-- Main Activity (No longer launcher) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SOSStaff" />
+
+        <!-- Main Container Activity -->
+        <activity
+            android:name=".main.MainContainer"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SOSStaff" />
+
+        <!-- Chat Activity -->
+        <activity
+            android:name=".main.chat.ChatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SOSStaff" />
+
+        <!-- Incident Detail Activity -->
+        <activity
+            android:name=".main.incidents.IncidentDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SOSStaff" />
+
+        <!-- Edit Profile Activity -->
+        <activity
+            android:name=".main.profile.EditProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SOSStaff" />
+
+        <!-- Firebase Messaging Service -->
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Login Activity (Launcher) -->
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SOSStaff">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
