@@ -42,14 +42,25 @@ A dual Android application system for emergency incident reporting and managemen
 
 ## Screenshots
 
-| Client App | Staff App |
-|:---:|:---:|
-| Login & Registration | Staff Login |
-| Home Dashboard | Incidents Dashboard |
-| Report Incident Form | Incident Detail & Status Update |
-| Incident Status Tracking | Chat with Reporter |
-| Chat with Staff | Profile & Availability |
-| Survival Guides | Push Notifications |
+| Login | Register Step 1 | Register Step 2 |
+|:---:|:---:|:---:|
+| ![Login](doc/screenshot/Login.png) | ![Register 1](doc/screenshot/signin-1.png) | ![Register 2](doc/screenshot/signin-2.png) |
+
+| Home | Report Incident | Report Step 1 |
+|:---:|:---:|:---:|
+| ![Home](doc/screenshot/Home.png) | ![Report](doc/screenshot/Report%20an%20incident.png) | ![Report 1](doc/screenshot/Report%20an%20incident-1.png) |
+
+| Report Step 2 | Report Step 3 | Incident Status |
+|:---:|:---:|:---:|
+| ![Report 2](doc/screenshot/Report%20an%20incident-2.png) | ![Report 3](doc/screenshot/Report%20an%20incident-3.png) | ![Doing](doc/screenshot/doing.png) |
+
+| Chat | Survival Guides | Guide Detail |
+|:---:|:---:|:---:|
+| ![Chat](doc/screenshot/chat.png) | ![Advice](doc/screenshot/Advice.png) | ![Advice Detail](doc/screenshot/Advice-in.png) |
+
+| Profile & Settings |
+|:---:|
+| ![Settings](doc/screenshot/setting.png) |
 
 ## Tech Stack
 
